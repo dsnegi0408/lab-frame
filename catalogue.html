@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        body{
+            font-family: monospace;
+        }
         .allbooks{
             /* display: flex; */
 
@@ -17,17 +23,62 @@
             height: 200px;
             border: 2px solid black;
         }
-        .book-img{
-            background:url(logo.jpg) ;
+        .book-img-1{
+            background:url(book1.jpg) ;
             width: 20%;
-            height: 150px;
+            height: 30vh;
             background-position: center;
             background-size: cover;
-            margin-top: 20px;
+            margin-top: 10px;
+
+        }
+        .book-img-2{
+            background:url(book2.jpg) ;
+            width: 20%;
+            height: 30vh;
+            background-position: center;
+            background-size: cover;
+            margin-top: 10px;
+
+        }
+        .book-img-3{
+            background:url(book3.jpg) ;
+            width: 20%;
+            height: 30vh;
+            background-position: center;
+            background-size: cover;
+            margin-top: 10px;
+
+        }
+        .book-img-4{
+            background:url(book4.jpg) ;
+            width: 20%;
+            height: 30vh;
+            background-position: center;
+            background-size: cover;
+            margin-top: 10px;
+
+        }
+        .book-img-5{
+            background:url(book5.png) ;
+            width: 20%;
+            height: 30vh;
+            background-position: center;
+            background-size: cover;
+            margin-top: 10px;
+
+        }
+        .book-img-6{
+            background:url(book6.png) ;
+            width: 20%;
+            height: 30vh;
+            background-position: center;
+            background-size: cover;
+            margin-top: 10px;
 
         }
         .details{
-            width: 20%;
+            width: 25%;
             /* border: 2px solid black; */
             padding-top: 20px;
             font-size: 1.2rem;
@@ -58,22 +109,42 @@
             color: black;
         }
         .cart button{
-            background-color: bisque;
+            background-color: rgb(246, 181, 102);
             border-radius: 12px;
+        }
+        .cart button i{
+            font-size: 1.4rem;
+            padding: 12px 3px;
+
+        }
+        .cart button a{
+            padding: 2px 1px ;
+        }
+        button:hover{
+            background-color:orange;
+            border:none;
+            color: aliceblue;
+        }
+        button a:hover{
+            background-color:orange;
+            border:none;
+            color: aliceblue;
         }
     </style>
 </head>
 <body>
     <div class="allbooks">
         <div class="box">
-            <div class="book-img">
+            <div class="book-img-1">
                 <!-- <img src="logo.jpg" alt=""> -->
 
             </div>
-            <div class="details">
-                <p><b>Book Name</b>   : <i>RAMAN</i></p>
-                <p><b>Author</b> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <i>Yogi P.S</i> </p>
-                <p><b>Publication</b> : <i>LAxmiKAnt</i></p>
+            <div class="details" style="display: flex;flex-direction: column;justify-content: space-evenly;">
+
+                <div class="bookName"><p><b>Book Name :</b> THE HISTORY</p></div>
+                <div class="bookAuth"><p><b>Author:</b> NELSON JANES</p></div>
+                <div class="Publication"><p><b>Publication :</b> ARIHANAT </p></div>
+                
 
 
             </div>
@@ -81,37 +152,38 @@
                 <p>$ : 230 Only</p>
             </div>
             <div class="cart">
-                <button><i class="fa-solid fa-cart-shopping"></i><a href="#">Add to Cart</a></button>
+                
+                <button><i class="fa-solid fa-cart-shopping fa-bounce"></i><a href="THANKYOU.html" target="home">Add to Cart</a></button>
             </div>
         </div>
         <div class="box">
-            <div class="book-img">
+            <div class="book-img-2">
                 <!-- <img src="logo.jpg" alt=""> -->
 
             </div>
             <div class="details">
-                <p><b>Book Name</b>   : <i>RAMAN </i></p>
-                <p><b>Author</b> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <i>Yogi P.S</i> </p>
-                <p><b>Publication</b> : <i>LAxmiKAnt</i></p>
+                <div class="bookName"><p><b>Book Name :</b> CHANGE</p></div>
+                <div class="bookAuth"><p><b>Author:</b> JOEV ROOTS</p></div>
+                <div class="Publication"><p><b>Publication :</b> PANKCAKE </p></div>
 
 
             </div>
             <div class="price">
-                <p>$ : 230 Only</p>
+                <p>$ : 144 Only</p>
             </div>
             <div class="cart">
-                <button><i class="fa-solid fa-cart-shopping"></i><a href="#">Add to Cart</a></button>
+                <button><i class="fa-solid fa-cart-shopping"></i><a href="THANKYOU.html" target="home">Add to Cart</a></button>
             </div>
         </div>
         <div class="box">
-            <div class="book-img">
+            <div class="book-img-3">
                 <!-- <img src="logo.jpg" alt=""> -->
 
             </div>
             <div class="details">
-                <p><b>Book Name</b>   : <i>RAMAN </i></p>
-                <p><b>Author</b> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <i>Yogi P.S</i> </p>
-                <p><b>Publication</b> : <i>LAxmiKAnt</i></p>
+                <div class="bookName"><p><b>Book Name :</b> PAST CALL WTD</p></div>
+                <div class="bookAuth"><p><b>Author:</b> BABY PINKY</p></div>
+                <div class="Publication"><p><b>Publication :</b> PRASHANDHR </p></div>
 
 
             </div>
@@ -119,18 +191,18 @@
                 <p>$ : 230 Only</p>
             </div>
             <div class="cart">
-                <button><i class="fa-solid fa-cart-shopping"></i><a href="#">Add to Cart</a></button>
+                <button><i class="fa-solid fa-cart-shopping"></i><a href="THANKYOU.html" target="home">Add to Cart</a></button>
             </div>
         </div>
         <div class="box">
-            <div class="book-img">
+            <div class="book-img-4">
                 <!-- <img src="logo.jpg" alt=""> -->
 
             </div>
             <div class="details">
-                <p><b>Book Name</b>   : <i>RAMAN</i></p>
-                <p><b>Author</b> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <i>Yogi P.S</i> </p>
-                <p><b>Publication</b> : <i>LAxmiKAnt</i></p>
+                <div class="bookName"><p><b>Book Name :</b> THE HISTORY</p></div>
+                <div class="bookAuth"><p><b>Author:</b> NELSON JANES</p></div>
+                <div class="Publication"><p><b>Publication :</b> ARIHANAT </p></div>
 
 
             </div>
@@ -138,18 +210,18 @@
                 <p>$ : 230 Only</p>
             </div>
             <div class="cart">
-                <button><i class="fa-solid fa-cart-shopping"></i><a href="#">Add to Cart</a></button>
+                <button><i class="fa-solid fa-cart-shopping"></i><a href="THANKYOU.html" target="home">Add to Cart</a></button>
             </div>
         </div>
         <div class="box">
-            <div class="book-img">
+            <div class="book-img-5">
                 <!-- <img src="logo.jpg" alt=""> -->
 
             </div>
             <div class="details">
-                <p><b>Book Name</b>   : <i>RAMAN </i></p>
-                <p><b>Author</b> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <i>Yogi P.S</i> </p>
-                <p><b>Publication</b> : <i>LAxmiKAnt</i></p>
+                <div class="bookName"><p><b>Book Name :</b> THE HISTORY</p></div>
+                <div class="bookAuth"><p><b>Author:</b> NELSON JANES</p></div>
+                <div class="Publication"><p><b>Publication :</b> ARIHANAT </p></div>
 
 
             </div>
@@ -157,18 +229,18 @@
                 <p>$ : 230 Only</p>
             </div>
             <div class="cart">
-                <button><i class="fa-solid fa-cart-shopping"></i><a href="#">Add to Cart</a></button>
+                <button><i class="fa-solid fa-cart-shopping"></i><a href="THANKYOU.html" target="home">Add to Cart</a></button>
             </div>
         </div>
         <div class="box">
-            <div class="book-img">
+            <div class="book-img-6">
                 <!-- <img src="logo.jpg" alt=""> -->
 
             </div>
             <div class="details">
-                <p><b>Book Name</b>   : <i>RAMAN </i></p>
-                <p><b>Author</b> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <i>Yogi P.S</i> </p>
-                <p><b>Publication</b> : <i>LAxmiKAnt</i></p>
+                <div class="bookName"><p><b>Book Name :</b> THE HISTORY</p></div>
+                <div class="bookAuth"><p><b>Author:</b> NELSON JANES</p></div>
+                <div class="Publication"><p><b>Publication :</b> ARIHANAT </p></div>
 
 
             </div>
@@ -176,7 +248,137 @@
                 <p>$ : 230 Only</p>
             </div>
             <div class="cart">
-                <button><i class="fa-solid fa-cart-shopping"></i><a href="THANKYOU.html">Add to Cart</a></button>
+                <button><i class="fa-solid fa-cart-shopping"></i><a href="THANKYOU.html" target="home">Add to Cart</a></button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="book-img-1">
+                <!-- <img src="logo.jpg" alt=""> -->
+
+            </div>
+            <div class="details">
+                <div class="bookName"><p><b>Book Name :</b> THE MYSTRYY</p></div>
+                <div class="bookAuth"><p><b>Author:</b> JAMES  JANES</p></div>
+                <div class="Publication"><p><b>Publication :</b> ARIHANAT </p></div>
+
+
+            </div>
+            <div class="price">
+                <p>$ : 963 Only</p>
+            </div>
+            <div class="cart">
+                <button><i class="fa-solid fa-cart-shopping"></i><a href="THANKYOU.html" target="home">Add to Cart</a></button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="book-img-5">
+                <!-- <img src="logo.jpg" alt=""> -->
+
+            </div>
+            <div class="details">
+                <div class="bookName"><p><b>Book Name :</b> THE HISTORY</p></div>
+                <div class="bookAuth"><p><b>Author:</b> GREEN PARK</p></div>
+                <div class="Publication"><p><b>Publication :</b> PARIHANAT </p></div>
+
+            </div>
+            <div class="price">
+                <p>$ : 3011 Only</p>
+            </div>
+            <div class="cart">
+                <button><i class="fa-solid fa-cart-shopping"></i><a href="THANKYOU.html" target="home">Add to Cart</a></button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="book-img-2">
+                <!-- <img src="logo.jpg" alt=""> -->
+
+            </div>
+            <div class="details">
+                <div class="bookName"><p><b>Book Name :</b> TECH WITH FUN</p></div>
+                <div class="bookAuth"><p><b>Author:</b> ALI JANES</p></div>
+                <div class="Publication"><p><b>Publication :</b> ARAVANT </p></div>
+
+            </div>
+            <div class="price">
+                <p>$ : 7830 Only</p>
+            </div>
+            <div class="cart">
+                <button><i class="fa-solid fa-cart-shopping"></i><a href="THANKYOU.html" target="home">Add to Cart</a></button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="book-img-4">
+                <!-- <img src="logo.jpg" alt=""> -->
+
+            </div>
+            <div class="details">
+                <div class="bookName"><p><b>Book Name :</b> DEAR TO LOVE</p></div>
+                <div class="bookAuth"><p><b>Author:</b> MANDALI MON</p></div>
+                <div class="Publication"><p><b>Publication :</b> LANDFILL </p></div>
+
+
+            </div>
+            <div class="price">
+                <p>$ : 150 Only</p>
+            </div>
+            <div class="cart">
+                <button><i class="fa-solid fa-cart-shopping"></i><a href="THANKYOU.html" target="home">Add to Cart</a></button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="book-img-3">
+                <!-- <img src="logo.jpg" alt=""> -->
+
+            </div>
+            <div class="details">
+                <div class="bookName"><p><b>Book Name :</b> BACK VS I</p></div>
+                <div class="bookAuth"><p><b>Author:</b> NELSON JANES</p></div>
+                <div class="Publication"><p><b>Publication :</b> ARIHANAT </p></div>
+
+            </div>
+            <div class="price">
+                <p>$ : 230 Only</p>
+            </div>
+            <div class="cart">
+                <button><i class="fa-solid fa-cart-shopping"></i><a href="THANKYOU.html" target="home">Add to Cart</a></button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="book-img-6">
+                <!-- <img src="logo.jpg" alt=""> -->
+
+            </div>
+            <div class="details">
+                <div class="bookName"><p><b>Book Name :</b> THE HISTORY</p></div>
+                <div class="bookAuth"><p><b>Author:</b> NELSON JANES</p></div>
+                <div class="Publication"><p><b>Publication :</b> ARIHANAT </p></div>
+
+
+            </div>
+            <div class="price">
+                <p>$ : 200 Only</p>
+            </div>
+            <div class="cart">
+                <button><i class="fa-solid fa-cart-shopping"></i><a href="THANKYOU.html" target="home">Add to Cart</a></button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="book-img-1">
+                <!-- <img src="logo.jpg" alt=""> -->
+
+            </div>
+            <div class="details">
+                <div class="bookName"><p><b>Book Name :</b> THE HISTORY</p></div>
+                <div class="bookAuth"><p><b>Author:</b> NELSON JANES</p></div>
+                <div class="Publication"><p><b>Publication :</b> ARIHANAT </p></div>
+
+
+            </div>
+            <div class="price">
+                <p>$ : 230 Only</p>
+            </div>
+            <div class="cart">
+                <button><i class="fa-solid fa-cart-shopping"></i><a href="THANKYOU.html" target="home">Add to Cart</a></button>
             </div>
         </div>
 
